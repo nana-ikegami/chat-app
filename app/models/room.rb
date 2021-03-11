@@ -5,5 +5,5 @@ class Room < ApplicationRecord
   validates :name, presence: true
   has_many :messages
 
-  validatable :name, presence: true
+  validates :name, presence: true
 end
